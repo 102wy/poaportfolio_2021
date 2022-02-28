@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <title>까르띠에 Redesign</title>
+    <link href="../../js/aos/aos.css" rel="stylesheet">
+    <script src="../../js/aos/aos.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <style type="text/css">
+        @charset 'utf-8';
+
+        /*webkit크롬*/
+        /* SCROLL */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* 스크롤바의 width */
+        ::-webkit-scrollbar-track {
+            background-color: #fff;
+        }
+
+        /* 스크롤바의 전체 배경색 */
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #3a0000, #3a0000);
+        }
+
+        /* 스크롤바 색 */
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline-style: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+            width: 100%;
+        }
+        .go-top {
+            position: fixed;
+            bottom: 25px;
+            right: 40px;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: #3a0000;
+            color: #fff;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            cursor: pointer;
+            z-index: 99;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .go-top-focus {
+            display: block;
+            opacity: 1.0;
+        }
+        .header {
+            position: relative;
+            display: block;
+        }
+        .header-txt {
+            position: absolute;
+            right: 222px;
+            top: 502px;
+            display: block;
+            width: 382px;
+            height: 29px;
+        }
+        .visual {
+            position: relative;
+            display: block;
+        }
+        .love-txt {
+            position: absolute;
+            right: 580px;
+            top: 299px;
+            display: block;
+            width: 387px;
+            height: 478px;
+        }
+        .dia-txt {
+            position: absolute;
+            left: 608px;
+            bottom: 412px;
+            display: block;
+            width: 357px;
+            height: 466px;
+        }
+        .perfume {
+            position: relative;
+            display: block;
+        }
+        .perfume-txt {
+            position: absolute;
+            right: 260px;
+            top: 72px;
+            display: block;
+            width: 512px;
+            height: 421px;
+        }
+        .bracelet {
+            position: relative;
+            display: block;
+        }
+        .bracelet-cont {
+            position: absolute;
+            left: 272px;
+            top: 296px;
+            display: block;
+            width: 1379px;
+            height: 406px;
+        }
+        .bag {
+            position: relative;
+            display: block;
+        }
+        .bag-txt1 {
+            position: absolute;
+            right: 496px;
+            top: 55px;
+            display: block;
+            width: 356px;
+            height: 369px;
+        }
+        .bag-txt2 {
+            position: absolute;
+            left: 432px;
+            bottom: 250px;
+            display: block;
+            width: 343px;
+            height: 494px;
+        }
+        .acc {
+            position: relative;
+            display: block;
+        }
+        .acc-cont {
+            position: absolute;
+            left: 272px;
+            top: 304px;
+            display: block;
+            width: 1375px;
+            height: 403px;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            AOS.init();
+
+            var goTop = $('.go-top');
+
+            goTop.click(function() {
+                $('html').stop().animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 스크롤 시 나타나기
+            $(window).scroll(function() {
+                var scY = $(window).scrollTop();
+                if (scY > 300) {
+                    $('.go-top').addClass('go-top-focus');
+                } else {
+                    $('.go-top').removeClass('go-top-focus');
+                }
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="go-top">TOP</div>
+    <div class="header">
+        <img src="header.png">
+        <img src="header-txt.png" class="header-txt" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="visual">
+        <img src="visual.png">
+        <img src="love-txt.png" class="love-txt" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+        <img src="dia-txt.png" class="dia-txt" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="perfume">
+        <img src="perfume.png">
+        <img src="perfume-txt.png" class="perfume-txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <img src="watch.png">
+    <div class="bracelet">
+        <img src="bracelet.png">
+        <img src="bracelet-cont.png" class="bracelet-cont" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="bag">
+        <img src="bag.png">
+        <img src="bag-txt1.png" class="bag-txt1" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+        <img src="bag-txt2.png" class="bag-txt2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="acc">
+        <img src="acc.png">
+        <img src="acc-cont.png" class="acc-cont" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <img src="service.png">
+    <img src="footer.png">
+</body>
+
+</html>
