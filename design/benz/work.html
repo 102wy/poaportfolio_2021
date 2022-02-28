@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <title>벤츠 Redesign</title>
+    <link href="../../js/aos/aos.css" rel="stylesheet">
+    <script src="../../js/aos/aos.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <style type="text/css">
+        @charset 'utf-8';
+        @import url('../../css/S-Core_Dream/font.css');
+
+        /*webkit크롬*/
+        /* SCROLL */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* 스크롤바의 width */
+        ::-webkit-scrollbar-track {
+            background-color: #fff;
+        }
+
+        /* 스크롤바의 전체 배경색 */
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #333, #333);
+        }
+
+        /* 스크롤바 색 */
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline-style: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+            width: 100%;
+        }
+        html {
+            overflow-x: hidden;
+        }
+        .go-top {
+            position: fixed;
+            bottom: 25px;
+            right: 40px;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            cursor: pointer;
+            z-index: 99;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .go-top-focus {
+            display: block;
+            opacity: 1.0;
+        }
+        .header {
+            position: relative;
+            display: block;
+        }
+        .header-txt {
+            position: absolute;
+            left: 140px;
+            top: 202px;
+            display: block;
+            width: 536px;
+            height: 197px;
+        }
+        .model {
+            position: relative;
+            display: block;
+        }
+        .model-cont {
+            position: absolute;
+            left: 531px;
+            bottom: 165px;
+            display: block;
+            width: 839px;
+            height: 775px;
+        }
+        .visual {
+            position: relative;
+            display: block;
+        }
+        .visual-txt {
+            position: absolute;
+            left: 65px;
+            top: 436px;
+            display: block;
+            width: 550px;
+            height: 233px;
+        }
+        .visual-txt2 {
+            position: absolute;
+            right: 67px;
+            bottom: 52px;
+            display: block;
+            width: 312px;
+            height: 83px;
+        }
+        .detail {
+            position: relative;
+            display: block;
+        }
+        .detail-txt1 {
+            position: absolute;
+            right: 278px;
+            top: 278px;
+            display: block;
+            width: 414px;
+            height: 592px;
+        } 
+        .detail-txt2 {
+            position: absolute;
+            left: 108px;
+            top: 1440px;
+            display: block;
+            width: 598px;
+            height: 426px;
+        }
+        .detail-txt3 {
+            position: absolute;
+            left: 637px;
+            bottom: 60px;
+            display: block;
+            width: 647px;
+            height: 87px;
+        }
+        .detail-2 {
+            position: relative;
+            display: block;
+        }
+        .app {
+            position: relative;
+            display: block;
+        }
+        .app-txt {
+            position: absolute;
+            right: 90px;
+            bottom: 377px;
+            display: block;
+            width: 683px;
+            height: 562px;
+        }
+        .news {
+            position: relative;
+            display: block;
+        }
+        .news-cont {
+            position: absolute;
+            right: 53px;
+            bottom: 357px;
+            display: block;
+            width: 1814px;
+            height: 774px;
+        }
+        .footer {
+            position: relative;
+            display: block;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            AOS.init();
+
+            var goTop = $('.go-top');
+
+            goTop.click(function() {
+                $('html').stop().animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 스크롤 시 나타나기
+            $(window).scroll(function() {
+                var scY = $(window).scrollTop();
+                if (scY > 400) {
+                    $('.go-top').addClass('go-top-focus');
+                } else {
+                    $('.go-top').removeClass('go-top-focus');
+                }
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="go-top">TOP</div>
+    <div class="header">
+        <img src="header.png">
+        <img src="header-txt.png" class="header-txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="model">
+        <img src="model.png">
+        <img src="model-cont.png" class="model-cont" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="visual">
+        <img src="visual.png">
+        <img src="visual-txt.png" class="visual-txt" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+        <img src="visual-txt2.png" class="visual-txt2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="detail">
+        <img src="detail.png">
+        <img src="detail-txt1.png" class="detail-txt1" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+        <img src="detail-txt2.png" class="detail-txt2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+        <img src="detail-txt3.png" class="detail-txt3" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="detail-2">
+        <img src="detail_2.png">
+    </div>
+    <div class="app">
+        <img src="app.png">
+        <img src="app-txt.png" class="app-txt" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="news">
+        <img src="news.png">
+        <img src="news-cont.png" class="news-cont" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="footer">
+        <img src="footer.png">
+    </div>
+</body>
+
+</html>
