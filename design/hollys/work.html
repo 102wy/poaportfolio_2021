@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <title>할리스커피 Redesign</title>
+    <link href="../../js/aos/aos.css" rel="stylesheet">
+    <script src="../../js/aos/aos.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <style type="text/css">
+        @charset 'utf-8';
+
+        /*webkit크롬*/
+        /* SCROLL */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* 스크롤바의 width */
+        ::-webkit-scrollbar-track {
+            background-color: #fff;
+        }
+
+        /* 스크롤바의 전체 배경색 */
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #f0b357, #f0b357);
+        }
+
+        /* 스크롤바 색 */
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline-style: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .wrap {}
+
+        .header {
+            position: relative;
+            display: block;
+        }
+
+        .banner {
+            position: absolute;
+            right: 255px;
+            top: 211px;
+            width: 1411px;
+            height: 443px;
+        }
+
+        .banner2 {
+            position: absolute;
+            right: 35px;
+            top: 695px;
+            display: block;
+            width: 1755px;
+            height: 270px;
+        }
+
+        .menu {
+            position: relative;
+            display: block;
+        }
+
+        .best {
+            position: absolute;
+            left: 218px;
+            top: 292px;
+            display: block;
+            width: 1482px;
+            height: 512px;
+        }
+
+        .new {
+            position: absolute;
+            left: 227px;
+            top: 1205px;
+            display: block;
+            width: 1513px;
+            height: 520px;
+        }
+
+        .app {
+            position: relative;
+            display: block;
+        }
+
+        .phone {
+            position: absolute;
+            left: 381px;
+            top: 528px;
+            display: block;
+            width: 1161px;
+            height: 591px;
+        }
+
+        .button {
+            position: absolute;
+            left: 725px;
+            bottom: 100px;
+            display: block;
+            width: 491px;
+            height: 66px;
+        }
+
+        .history {
+            position: relative;
+            display: block;
+        }
+
+        .history_txt {
+            position: absolute;
+            left: 362px;
+            top: 251px;
+            display: block;
+            width: 1195px;
+            height: 578px;
+        }
+
+        .news {
+            position: relative;
+            display: block;
+        }
+
+        .news_txt {
+            position: absolute;
+            left: 130px;
+            top: 50px;
+            display: block;
+            width: 1607px;
+            height: 444px;
+        }
+
+        .footer {
+            position: relative;
+            display: block;
+        }
+
+        .insta {
+            position: absolute;
+            left: 427px;
+            top: 458px;
+            display: block;
+            width: 1069px;
+            height: 276px;
+        }
+
+        .go-top {
+            position: fixed;
+            bottom: 25px;
+            right: 40px;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: #f0b357;
+            color: #fff;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            cursor: pointer;
+            z-index: 99;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .go-top-focus {
+            display: block;
+            opacity: 1.0;
+        }
+
+    </style>
+    <script>
+        window.onload = function() {
+            AOS.init();
+
+            var goTop = $('.go-top');
+
+            goTop.click(function() {
+                $('html').stop().animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 스크롤 시 나타나기
+            $(window).scroll(function() {
+                var scY = $(window).scrollTop();
+                if (scY > 550) {
+                    $('.go-top').addClass('go-top-focus');
+                } else {
+                    $('.go-top').removeClass('go-top-focus');
+                }
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="go-top">TOP</div>
+    <div class="header">
+        <img src="header.png" class="header">
+        <img src="banner.png" class="banner" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+        <img src="banner2.png" class="banner2" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800">
+    </div>
+    <div class="menu">
+        <img src="menu.png">
+        <img src="best.png" class="best" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+        <img src="new.png" class="new" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+    </div>
+    <div class="app">
+        <img src="app.png">
+        <img src="phone.png" class="phone" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+        <img src="button.png" class="button" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300">
+    </div>
+    <div class="history">
+        <img src="history.png">
+        <img src="history_txt.png" class="history_txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+    </div>
+    <div class="news">
+        <img src="news.png">
+        <img src="news_txt.png" class="news_txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+    </div>
+    <div class="footer">
+        <img src="footer.png">
+        <img src="insta.png" class="insta" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <title>먼약APP Process</title>
+    <link rel="stylesheet" href="../../js/swiper/swiper.min.css">
+    <script src="../../js/swiper/swiper.min.js"></script>
+    <link href="../../js/aos/aos.css" rel="stylesheet">
+    <script src="../../js/aos/aos.js"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <style type="text/css">
+        @charset 'utf-8';
+        @import url('../../css/S-Core_Dream/font.css');
+
+        /*webkit크롬*/
+        /* SCROLL */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* 스크롤바의 width */
+        ::-webkit-scrollbar-track {
+            background-color: #fff;
+        }
+
+        /* 스크롤바의 전체 배경색 */
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #5bc5bb, #5bc5bb);
+        }
+
+        /* 스크롤바 색 */
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline-style: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+            width: 100%;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .go-top {
+            position: fixed;
+            bottom: 25px;
+            right: 40px;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: #5bc5bb;
+            color: #fff;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 50px;
+            cursor: pointer;
+            z-index: 99;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .go-top-focus {
+            display: block;
+            opacity: 1.0;
+        }
+
+        .header {
+            position: relative;
+            display: block;
+        }
+
+        .header-txt {
+            position: absolute;
+            left: 278px;
+            top: 130px;
+            display: block;
+            width: 340px;
+            height: 656px;
+        }
+
+        .overview {
+            position: relative;
+            display: block;
+        }
+
+        .overview-txt {
+            position: absolute;
+            right: 527px;
+            top: 140px;
+            display: block;
+            width: 620px;
+            height: 182px;
+        }
+
+        .overview-cont {
+            position: absolute;
+            right: 227px;
+            top: 403px;
+            display: block;
+            width: 921px;
+            height: 250px;
+        }
+
+        .uservoice {
+            position: absolute;
+            right: 259px;
+            bottom: 180px;
+            display: block;
+            width: 1320px;
+            height: 646px;
+        }
+
+        .guide {
+            position: relative;
+            display: block;
+        }
+
+        .color {
+            position: absolute;
+            right: 180px;
+            top: 256px;
+            display: block;
+            width: 1535px;
+            height: 262px;
+        }
+
+        .icon {
+            position: absolute;
+            right: 302px;
+            bottom: 143px;
+            display: block;
+            width: 1412px;
+            height: 311px;
+        }
+
+        .wireframe {
+            position: relative;
+            display: block;
+            overflow: hidden;
+        }
+        .sw-wire {
+            position: absolute;
+            left: 30px;
+            top: 239px;
+            display: block;
+            height: 542px;
+        }
+        .sw-wire img {
+            position: relative;
+            display: block;
+            width: 247px;
+            height: 542px;
+        }
+        .visual1 {
+            position: relative;
+            display: block;
+        }
+        .visual1-txt {
+            position: absolute;
+            right: 448px;
+            top: 366px;
+            display: block;
+            width: 525px;
+            height: 208px;
+        }
+        .visual2 {
+            position: relative;
+            display: block;
+        }
+        .visual2-txt {
+            position: absolute;
+            left: 484px;
+            top: 23px;
+            display: block;
+            width: 606px;
+            height: 216px;
+        }
+        .visual3 {
+            position: relative;
+            display: block;
+        }
+        .visual3-txt {
+            position: absolute;
+            right: 322px;
+            top: 23px;
+            display: block;
+            width: 649px;
+            height: 181px;
+        }
+        .visual4 {
+            position: relative;
+            display: block;
+        }
+        .visual4-txt {
+            position: absolute;
+            left: 604px;
+            top: 27px;
+            display: block;
+            width: 712px;
+            height: 181px;
+        }
+        .footer {
+            position: relative;
+            display: block;
+        }
+        .footer-txt {
+            position: absolute;
+            right: 506px;
+            top: 165px;
+            display: block;
+            width: 482px;
+            height: 344px;
+        }
+        .redesign-page {
+            position: absolute;
+            left: 932px;
+            bottom: 160px;
+            display: block;
+            width: 236.5px;
+            height: 52px;
+            background: #fff;
+            border: 1px solid #fff;
+            transition: background 0.3s;
+        }
+
+        .redesign-page:hover {
+            background: #5bc5bb;
+        }
+
+        .redesign-page:hover>a {
+            color: #fff !important;
+        }
+
+        .redesign-page>a {
+            position: relative;
+            display: block;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 52px;
+            text-align: center;
+            color: #333;
+            letter-spacing: 0;
+            transition: color 0.3s;
+        }
+
+        .next-page {
+            position: absolute;
+            right: 446px;
+            bottom: 160px;
+            display: block;
+            width: 236.5px;
+            height: 52px;
+            background: #fff;
+            border: 1px solid #fff;
+            transition: background 0.3s;
+        }
+
+        .next-page:hover {
+            background: #5bc5bb;
+        }
+
+        .next-page:hover>a {
+            color: #fff !important;
+        }
+
+        .next-page>a {
+            position: relative;
+            display: block;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 52px;
+            text-align: center;
+            color: #333;
+            letter-spacing: 0;
+            transition: color 0.3s;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            AOS.init();
+
+            var goTop = $('.go-top');
+
+            goTop.click(function() {
+                $('html').stop().animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 스크롤 시 나타나기
+            $(window).scroll(function() {
+                var scY = $(window).scrollTop();
+                if (scY > 400) {
+                    $('.go-top').addClass('go-top-focus');
+                } else {
+                    $('.go-top').removeClass('go-top-focus');
+                }
+            });
+
+            var sw_wire = new Swiper('.sw-wire', {
+                loop: true,
+                speed: 1000,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: 6,
+                spaceBetween: 6,
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="go-top">TOP</div>
+    <div class="header">
+        <img src="header.png">
+        <img src="header-txt.png" class="header-txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="overview">
+        <img src="overview.png">
+        <img src="overview-txt.png" class="overview-txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+        <img src="overview-cont.png" class="overview-cont" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="700">
+        <img src="uservoice.png" class="uservoice" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="guide">
+        <img src="guide.png">
+        <img src="color.png" class="color" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+        <img src="icon.png" class="icon" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="wireframe">
+        <img src="wireframe.png">
+        <div class="swiper-container sw-wire">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="frame-1.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="frame-2.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="frame-3.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="frame-4.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="frame-5.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="frame-6.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="visual1">
+        <img src="visual1.png">
+        <img src="visual1-txt.png" class="visual1-txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="visual2">
+        <img src="visual2.png">
+        <img src="visual2-txt.png" class="visual2-txt" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="visual3">
+        <img src="visual3.png">
+        <img src="visual3-txt.png" class="visual3-txt" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="visual4">
+        <img src="visual4.png">
+        <img src="visual4-txt.png" class="visual4-txt" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+    </div>
+    <div class="footer">
+        <img src="footer.png">
+        <img src="footer-txt.png" class="footer-txt"  data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+        <button class="redesign-page" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+            <a href="../benz/process.html">PREV PAGE</a>
+        </button>
+        <button class="next-page" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+            <a href="../hollys/process.html">NEXT PAGE</a>
+        </button>
+    </div>
+</body>
+
+</html>
