@@ -1,610 +1,641 @@
 <!DOCTOPYE html>
-<html lang="ko">
+    <html lang="ko">
 
-<head>
-    <meta charset="utf-8">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <title>김원영 포트폴리오</title>
-    <script src="js/jquery.min.js"></script>
-    <!-- <script type="text/javascript" src="js/prefixfree.min.js"></script> -->
-    <!--[if lt IE 9]> 
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <title>김원영 포트폴리오</title>
+        <script src="js/jquery.min.js"></script>
+        <!-- <script type="text/javascript" src="js/prefixfree.min.js"></script> -->
+        <!--[if lt IE 9]> 
         <script src="js/html5shiv.js"></script>
     <![endif]-->
-    <!-- respond.js -->
-    <script src="js/respond.min.js"></script>
-    <!-- Swiper 슬라이드 -->
-    <link rel="stylesheet" href="js/swiper/swiper.min.css">
-    <script src="js/swiper/swiper.min.js"></script>
-    <!-- aos 관련 코드 -->
-    <link href="js/aos/aos.css" rel="stylesheet">
-    <script src="js/aos/aos.js"></script>
-    <!-- waypoint.js -->
-    <script src="js/waypoints.min.js"></script>
-    <!-- Progressbar 관련 -->
-    <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
-    <!-- 딩벳폰트 참조 -->
-    <link rel="stylesheet" href="css/fontello/css/animation.css">
-    <link rel="stylesheet" href="css/fontello/css/fontello.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-    <!-- lightbox2 참조 -->
-    <link rel="stylesheet" type="text/css" href="js/lightbox2/css/lightbox.css">
-    <script src="js/lightbox2/js/lightbox.js"></script>
-</head>
+        <!-- respond.js -->
+        <script src="js/respond.min.js"></script>
+        <!-- Swiper 슬라이드 -->
+        <link rel="stylesheet" href="js/swiper/swiper.min.css">
+        <script src="js/swiper/swiper.min.js"></script>
+        <!-- aos 관련 코드 -->
+        <link href="js/aos/aos.css" rel="stylesheet">
+        <script src="js/aos/aos.js"></script>
+        <!-- waypoint.js -->
+        <script src="js/waypoints.min.js"></script>
+        <!-- Progressbar 관련 -->
+        <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
+        <!-- 딩벳폰트 참조 -->
+        <link rel="stylesheet" href="css/fontello/css/animation.css">
+        <link rel="stylesheet" href="css/fontello/css/fontello.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+        <!-- lightbox2 참조 -->
+        <link rel="stylesheet" type="text/css" href="js/lightbox2/css/lightbox.css">
+        <script src="js/lightbox2/js/lightbox.js"></script>
+    </head>
 
-<body>
-    <!-- 모달창 -->
-    <div class="modal">
-        <div class="modal-wrap">
-            <div class="modal-button">
-                <span class="icon-cancel-outline"></span>
-            </div>
-            <div class="modal-cont">
-                <img src="images/more_01_detail.png">
-            </div>
-            <div class="modal-cont">
-                <img src="images/more_02_detail.png">
-            </div>
-            <div class="modal-cont">
-                <img src="images/more_03_detail.png">
-            </div>
-            <div class="modal-cont">
-                <img src="images/more_04_detail.png">
+    <body>
+        <!-- 모달창 -->
+        <div class="modal">
+            <div class="modal-wrap">
+                <div class="modal-button">
+                    <span class="icon-cancel-outline"></span>
+                </div>
+                <div class="modal-cont">
+                    <img src="images/more_01_detail.png">
+                </div>
+                <div class="modal-cont">
+                    <img src="images/more_02_detail.png">
+                </div>
+                <div class="modal-cont">
+                    <img src="images/more_03_detail.png">
+                </div>
+                <div class="modal-cont">
+                    <img src="images/more_04_detail.png">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="wrap fix-wrap">        
-        <div class="navi">
-            <ul class="navi-list">
-                <li class="navi-normal navi-focus" page-index="0"></li>
-                <li class="navi-normal" page-index="1"></li>
-                <li class="navi-normal" page-index="2"></li>
-                <li class="navi-normal" page-index="3"></li>
-                <li class="navi-normal" page-index="4"></li>
-                <li class="navi-normal" page-index="5"></li>
-                <li class="navi-normal" page-index="6"></li>
-                <li class="navi-normal" page-index="7"></li>
-            </ul>
+        <div class="wrap fix-wrap">
+            <div class="navi">
+                <ul class="navi-list">
+                    <li class="navi-normal navi-focus" page-index="0"></li>
+                    <li class="navi-normal" page-index="1"></li>
+                    <li class="navi-normal" page-index="2"></li>
+                    <li class="navi-normal" page-index="3"></li>
+                    <li class="navi-normal" page-index="4"></li>
+                    <li class="navi-normal" page-index="5"></li>
+                    <li class="navi-normal" page-index="6"></li>
+                    <li class="navi-normal" page-index="7"></li>
+                </ul>
+            </div>
+            <div class="gotop">TOP</div>
         </div>
-        <div class="gotop">TOP</div>
-    </div>
 
-    <div class="wrap">
-        <!-- 메인 -->
-        <div class="main" id="main">
-            <div class="pagew">
-                <div class="header">
-                    <a href="#" class="logo"></a>
-                    <div class="gnb">
-                        <ul class="depth1 clearfix">
-                            <li>
-                                <a href="#profile" class="mainmenu" page-index="1">PROFILE</a>
-                            </li>
-                            <li>
-                                <a href="#redesign" class="mainmenu" page-index="2">RE-DESIGN</a>
-                            </li>
-                            <li>
-                                <a href="#publishing" class="mainmenu" page-index="3">WEB PUBLISHING</a>
-                            </li>
-                            <li>
-                                <a href="#work" class="mainmenu" page-index="4">WORKS</a>
-                            </li>
-                            <li>
-                                <a href="#story" class="mainmenu" page-index="5">STORY</a>
-                            </li>
-                            <li>
-                                <a href="#aboutme" class="mainmenu" page-index="6">ABOUT ME</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="main-visual">
-                    <img src="images/main_img.png" class="visual-img">
-                    <img src="images/main_txt.png" class="visual-txt" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600">
-                </div>
-            </div>
-        </div>
-        <!-- 프로필 -->
-        <div class="profile" id="profile">
-            <div class="pagew clearfix">
-                <div class="profile-left">
-                    <div class="profile-menu">
-                        <img src="images/profile-menu.png">
-                    </div>
-                    <img src="images/main-pic2.png" class="profile-pic" data-aos="flip-left" data-aos-duration="1000">
-                    <div class="pic-line" data-aos="flip-right" data-aos-duration="1000"></div>
-                    <a href="https://drive.google.com/file/d/1c4ajuSrom1i2uWFztuQleamEMSpKjy9i/view?usp=sharing" target="_blank" class="pdf-down">
-                        <p>PDF DOWNLOAD</p>
-                    </a>
-                    <div class="name-ani rot-ani"></div>
-                </div>
-                <div class="profile-right">
-                    <div class="profile-tit" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
-                        <h3>“끊임없이 성장하는 디자이너 <p>김원영</p> 입니다”</h3>
-                        <div class="p-tit-line"></div>
-                    </div>
-                    <div class="profile-top clearfix">
-                        <div class="education" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
-                            <h3 class="education-tit">Education</h3>
-                            <ul class="education-list">
-                                <li>2014.02 - 경화여자고등학교 졸업</li>
-                                <li>2016.11 - 영업관리 초급운영 교육과정</li>
-                                <li>2021.09 - 그린컴퓨터아트학원 디지털디자인</li>
-                                <li>반응형 웹 디자인 & 웹퍼블리셔</li>
-                                <li>디지털 인재 양성과정 수료</li>
-                            </ul>
-                        </div>
-                        <div class="certificate" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
-                            <h3 class="certificate-tit">Certificate</h3>
-                            <ul class="certificate-list">
-                                <li>2020 - 자동차 운전면허증</li>
-                                <li>2021 - 웹디자인 기능사</li>
+        <div class="wrap">
+            <!-- 메인 -->
+            <div class="main" id="main">
+                <div class="pagew">
+                    <div class="header">
+                        <a href="#" class="logo"></a>
+                        <div class="gnb">
+                            <ul class="depth1 clearfix">
+                                <li>
+                                    <a href="#profile" class="mainmenu" page-index="1">PROFILE</a>
+                                </li>
+                                <li>
+                                    <a href="#redesign" class="mainmenu" page-index="2">RE-DESIGN</a>
+                                </li>
+                                <li>
+                                    <a href="#publishing" class="mainmenu" page-index="3">WEB PUBLISHING</a>
+                                </li>
+                                <li>
+                                    <a href="#work" class="mainmenu" page-index="4">WORKS</a>
+                                </li>
+                                <li>
+                                    <a href="#story" class="mainmenu" page-index="5">STORY</a>
+                                </li>
+                                <li>
+                                    <a href="#aboutme" class="mainmenu" page-index="6">ABOUT ME</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="character">
-                        <h3 class="character-tit" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">Character</h3>
-                        <ul class="character-list" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
-                            <li>꼼꼼함<div class="c-list1" id="character_br_1"></div>
-                            </li>
-                            <li>책임감<div class="c-list2" id="character_br_2"></div>
-                            </li>
-                            <li>리더쉽<div class="c-list3" id="character_br_3"></div>
-                            </li>
-                        </ul>
+                    <div class="main-visual">
+                        <img src="images/main_img.png" class="visual-img">
+                        <img src="images/main_txt.png" class="visual-txt" data-aos="fade-down" data-aos-duration="1000"
+                            data-aos-delay="600">
                     </div>
-                    <div class="skill-container">
-                        <h3 class="skill-tit" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">Skill</h3>
-                        <div class="skill-list" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
-                            <div class="skill" id="skill_ph">
-                                <span>photoshop</span>
+                </div>
+            </div>
+            <!-- 프로필 -->
+            <div class="profile" id="profile">
+                <div class="pagew clearfix">
+                    <div class="profile-left">
+                        <div class="profile-menu">
+                            <img src="images/profile-menu.png">
+                        </div>
+                        <img src="images/main-pic2.png" class="profile-pic" data-aos="flip-left"
+                            data-aos-duration="1000">
+                        <div class="pic-line" data-aos="flip-right" data-aos-duration="1000"></div>
+                        <a href="https://drive.google.com/file/d/1c4ajuSrom1i2uWFztuQleamEMSpKjy9i/view?usp=sharing"
+                            target="_blank" class="pdf-down">
+                            <p>PDF DOWNLOAD</p>
+                        </a>
+                        <div class="name-ani rot-ani"></div>
+                    </div>
+                    <div class="profile-right">
+                        <div class="profile-tit" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+                            <h3>“끊임없이 성장하는 디자이너 <p>김원영</p> 입니다”</h3>
+                            <div class="p-tit-line"></div>
+                        </div>
+                        <div class="profile-top clearfix">
+                            <div class="education" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+                                <h3 class="education-tit">Education</h3>
+                                <ul class="education-list">
+                                    <li>2014.02 - 경화여자고등학교 졸업</li>
+                                    <li>2016.11 - 영업관리 초급운영 교육과정</li>
+                                    <li>2021.09 - 그린컴퓨터아트학원 디지털디자인</li>
+                                    <li>반응형 웹 디자인 & 웹퍼블리셔</li>
+                                    <li>디지털 인재 양성과정 수료</li>
+                                </ul>
                             </div>
-                            <div class="skill" id="skill_il">
-                                <span>illust</span>
+                            <div class="certificate" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+                                <h3 class="certificate-tit">Certificate</h3>
+                                <ul class="certificate-list">
+                                    <li>2020 - 자동차 운전면허증</li>
+                                    <li>2021 - 웹디자인 기능사</li>
+                                </ul>
                             </div>
-                            <div class="skill" id="skill_html">
-                                <span>html</span>
-                            </div>
-                            <div class="skill" id="skill_css">
-                                <span>css</span>
-                            </div>
-                            <div class="skill" id="skill_js">
-                                <span>js</span>
+                        </div>
+                        <div class="character">
+                            <h3 class="character-tit" data-aos="fade-down" data-aos-duration="1000"
+                                data-aos-delay="400">Character</h3>
+                            <ul class="character-list" data-aos="fade-down" data-aos-duration="1000"
+                                data-aos-delay="400">
+                                <li>꼼꼼함<div class="c-list1" id="character_br_1"></div>
+                                </li>
+                                <li>책임감<div class="c-list2" id="character_br_2"></div>
+                                </li>
+                                <li>리더쉽<div class="c-list3" id="character_br_3"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="skill-container">
+                            <h3 class="skill-tit" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+                                Skill</h3>
+                            <div class="skill-list" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
+                                <div class="skill" id="skill_ph">
+                                    <span>photoshop</span>
+                                </div>
+                                <div class="skill" id="skill_il">
+                                    <span>illust</span>
+                                </div>
+                                <div class="skill" id="skill_html">
+                                    <span>html</span>
+                                </div>
+                                <div class="skill" id="skill_css">
+                                    <span>css</span>
+                                </div>
+                                <div class="skill" id="skill_js">
+                                    <span>js</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 리디자인 -->
-        <div class="redesign" id="redesign">
-            <div class="pagew">
-                <div class="redesign-menu">
-                    <img src="images/redesign-menu.png">
-                </div>
-                <div class="swiper-container sw-redesign">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide clearfix">
-                            <div class="redesign-left">
-                                <div class="imac">
-                                    <div class="design-cover">
-                                        <a class="scroll-icon">
-                                            <span></span>
-                                        </a>
-                                        <p class="scroll-txt">Scroll</p>
-                                    </div>
-                                    <div class="scroll-wrapper">
-                                        <div class="scroll-img">
-                                            <img src="images/hollys.png">
+            <!-- 리디자인 -->
+            <div class="redesign" id="redesign">
+                <div class="pagew">
+                    <div class="redesign-menu">
+                        <img src="images/redesign-menu.png">
+                    </div>
+                    <div class="swiper-container sw-redesign">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide clearfix">
+                                <div class="redesign-left">
+                                    <div class="imac">
+                                        <div class="design-cover">
+                                            <a class="scroll-icon">
+                                                <span></span>
+                                            </a>
+                                            <p class="scroll-txt">Scroll</p>
+                                        </div>
+                                        <div class="scroll-wrapper">
+                                            <div class="scroll-img">
+                                                <img src="images/hollys.png">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="redesign-right">
+                                    <div class="redesign-r-top">
+                                        <b3 class="redesign-num">01</b3>
+                                        <b3 class="redesign-tit">할리스커피</b3>
+                                        <p class="redesign-entit">hollys coffee</p>
+                                        <p class="redesign-desc">
+                                            기존의 올드한 디자인에서 벗어나 할리스 커피의<br>
+                                            톡톡튀는 느낌을 살려내며 다양한 메뉴들을<br>
+                                            메인화면에 녹아내었습니다.
+                                        </p>
+                                    </div>
+                                    <div class="redesign-r-bottom clearfix">
+                                        <div class="redesign-b-tit">
+                                            <p>Project</p>
+                                            <p>Date</p>
+                                            <p>Program</p>
+                                        </div>
+                                        <div class="redesign-b-desc">
+                                            <p>할리스 커피 웹사이트 리디자인</p>
+                                            <p>2021.05</p>
+                                            <p>Photoshop / Illustrator</p>
+                                        </div>
+                                    </div>
+                                    <div class="redesign-button">
+                                        <a href="design/hollys/work.html" target="_blank"
+                                            class="button-design">Redesign</a>
+                                        <a href="design/hollys/process.html" target="_blank"
+                                            class="button-process">Process</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="redesign-right">
-                                <div class="redesign-r-top">
-                                    <b3 class="redesign-num">01</b3>
-                                    <b3 class="redesign-tit">할리스커피</b3>
-                                    <p class="redesign-entit">hollys coffee</p>
-                                    <p class="redesign-desc">
-                                        기존의 올드한 디자인에서 벗어나 할리스 커피의<br>
-                                        톡톡튀는 느낌을 살려내며 다양한 메뉴들을<br>
-                                        메인화면에 녹아내었습니다.
-                                    </p>
-                                </div>
-                                <div class="redesign-r-bottom clearfix">
-                                    <div class="redesign-b-tit">
-                                        <p>Project</p>
-                                        <p>Date</p>
-                                        <p>Program</p>
-                                    </div>
-                                    <div class="redesign-b-desc">
-                                        <p>할리스 커피 웹사이트 리디자인</p>
-                                        <p>2021.05</p>
-                                        <p>Photoshop / Illustrator</p>
-                                    </div>
-                                </div>
-                                <div class="redesign-button">
-                                    <a href="portflio/hollys/work.html" target="_blank" class="button-design">Redesign</a>
-                                    <a href="portflio/hollys/process.html" target="_blank" class="button-process">Process</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide clearfix">
-                            <div class="redesign-left">
-                                <div class="imac">
-                                    <div class="design-cover">
-                                        <a class="scroll-icon">
-                                            <span></span>
-                                        </a>
-                                        <p class="scroll-txt">Scroll</p>
-                                    </div>
-                                    <div class="scroll-wrapper">
-                                        <div class="scroll-img">
-                                            <img src="images/cartier.png">
+                            <div class="swiper-slide clearfix">
+                                <div class="redesign-left">
+                                    <div class="imac">
+                                        <div class="design-cover">
+                                            <a class="scroll-icon">
+                                                <span></span>
+                                            </a>
+                                            <p class="scroll-txt">Scroll</p>
+                                        </div>
+                                        <div class="scroll-wrapper">
+                                            <div class="scroll-img">
+                                                <img src="images/cartier.png">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="redesign-right">
+                                    <div class="redesign-r-top">
+                                        <b3 class="redesign-num">02</b3>
+                                        <b3 class="redesign-tit">까르띠에</b3>
+                                        <p class="redesign-entit">cartier</p>
+                                        <p class="redesign-desc">
+                                            까르띠에 브랜드 포인트 컬러를 살려내면서<br>
+                                            브랜드의 고급스러움 또한 해치지 않게<br>
+                                            리디자인 했습니다.
+                                        </p>
+                                    </div>
+                                    <div class="redesign-r-bottom clearfix">
+                                        <div class="redesign-b-tit">
+                                            <p>Project</p>
+                                            <p>Date</p>
+                                            <p>Program</p>
+                                        </div>
+                                        <div class="redesign-b-desc">
+                                            <p>까르띠에 웹사이트 리디자인</p>
+                                            <p>2021.06</p>
+                                            <p>Photoshop / Illustrator</p>
+                                        </div>
+                                    </div>
+                                    <div class="redesign-button">
+                                        <a href="design/cartier/work.html" target="_blank"
+                                            class="button-design">Redesign</a>
+                                        <a href="design/cartier/process.html" target="_blank"
+                                            class="button-process">Process</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="redesign-right">
-                                <div class="redesign-r-top">
-                                    <b3 class="redesign-num">02</b3>
-                                    <b3 class="redesign-tit">까르띠에</b3>
-                                    <p class="redesign-entit">cartier</p>
-                                    <p class="redesign-desc">
-                                        까르띠에 브랜드 포인트 컬러를 살려내면서<br>
-                                        브랜드의 고급스러움 또한 해치지 않게<br>
-                                        리디자인 했습니다.
-                                    </p>
-                                </div>
-                                <div class="redesign-r-bottom clearfix">
-                                    <div class="redesign-b-tit">
-                                        <p>Project</p>
-                                        <p>Date</p>
-                                        <p>Program</p>
-                                    </div>
-                                    <div class="redesign-b-desc">
-                                        <p>까르띠에 웹사이트 리디자인</p>
-                                        <p>2021.06</p>
-                                        <p>Photoshop / Illustrator</p>
-                                    </div>
-                                </div>
-                                <div class="redesign-button">
-                                    <a href="portflio/cartier/work.html" target="_blank" class="button-design">Redesign</a>
-                                    <a href="portflio/cartier/process.html" target="_blank" class="button-process">Process</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide clearfix">
-                            <div class="redesign-left">
-                                <div class="imac">
-                                    <div class="design-cover">
-                                        <a class="scroll-icon">
-                                            <span></span>
-                                        </a>
-                                        <p class="scroll-txt">Scroll</p>
-                                    </div>
-                                    <div class="scroll-wrapper">
-                                        <div class="scroll-img">
-                                            <img src="images/benz.png">
+                            <div class="swiper-slide clearfix">
+                                <div class="redesign-left">
+                                    <div class="imac">
+                                        <div class="design-cover">
+                                            <a class="scroll-icon">
+                                                <span></span>
+                                            </a>
+                                            <p class="scroll-txt">Scroll</p>
+                                        </div>
+                                        <div class="scroll-wrapper">
+                                            <div class="scroll-img">
+                                                <img src="images/benz.png">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="redesign-right">
+                                    <div class="redesign-r-top">
+                                        <b3 class="redesign-num">03</b3>
+                                        <b3 class="redesign-tit">벤츠</b3>
+                                        <p class="redesign-entit">mercedes-benz</p>
+                                        <p class="redesign-desc">
+                                            번잡스러운 메인화면을 보기좋게 정리하였으며 <br>
+                                            메인 화면에서 필요한 부분을 모두 볼 수 있게<br>
+                                            구성하였습니다.
+                                        </p>
+                                    </div>
+                                    <div class="redesign-r-bottom clearfix">
+                                        <div class="redesign-b-tit">
+                                            <p>Project</p>
+                                            <p>Date</p>
+                                            <p>Program</p>
+                                        </div>
+                                        <div class="redesign-b-desc">
+                                            <p>벤츠 웹사이트 리디자인</p>
+                                            <p>2021.07</p>
+                                            <p>Photoshop / Illustrator</p>
+                                        </div>
+                                    </div>
+                                    <div class="redesign-button">
+                                        <a href="design/benz/work.html" target="_blank"
+                                            class="button-design">Redesign</a>
+                                        <a href="design/benz/process.html" target="_blank"
+                                            class="button-process">Process</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="redesign-right">
-                                <div class="redesign-r-top">
-                                    <b3 class="redesign-num">03</b3>
-                                    <b3 class="redesign-tit">벤츠</b3>
-                                    <p class="redesign-entit">mercedes-benz</p>
-                                    <p class="redesign-desc">
-                                        번잡스러운 메인화면을 보기좋게 정리하였으며 <br>
-                                        메인 화면에서 필요한 부분을 모두 볼 수 있게<br>
-                                        구성하였습니다.
-                                    </p>
+                            <div class="swiper-slide clearfix">
+                                <div class="redesign-left">
+                                    <div class="re-iphone"></div>
                                 </div>
-                                <div class="redesign-r-bottom clearfix">
-                                    <div class="redesign-b-tit">
-                                        <p>Project</p>
-                                        <p>Date</p>
-                                        <p>Program</p>
+                                <div class="redesign-right">
+                                    <div class="redesign-r-top">
+                                        <b3 class="redesign-num">04</b3>
+                                        <b3 class="redesign-tit">먼약 App</b3>
+                                        <p class="redesign-entit">munyak</p>
+                                        <p class="redesign-desc">
+                                            메인화면에 내용을 빼내서 보기좋게 정리<br>
+                                            하였으며 사진검색,쇼핑,약캘린더 기능을<br>
+                                            추가 하여 사용자의 편리성을 높였습니다.
+                                        </p>
                                     </div>
-                                    <div class="redesign-b-desc">
-                                        <p>벤츠 웹사이트 리디자인</p>
-                                        <p>2021.07</p>
-                                        <p>Photoshop / Illustrator</p>
+                                    <div class="redesign-r-bottom clearfix">
+                                        <div class="redesign-b-tit">
+                                            <p>Project</p>
+                                            <p>Date</p>
+                                            <p>Program</p>
+                                        </div>
+                                        <div class="redesign-b-desc">
+                                            <p>먼약 어플 리디자인</p>
+                                            <p>2021.08</p>
+                                            <p>Photoshop / Illustrator</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="redesign-button">
-                                    <a href="portflio/benz/work.html" target="_blank" class="button-design">Redesign</a>
-                                    <a href="portflio/benz/process.html" target="_blank" class="button-process">Process</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide clearfix">
-                            <div class="redesign-left">
-                                <div class="re-iphone"></div>
-                            </div>
-                            <div class="redesign-right">
-                                <div class="redesign-r-top">
-                                    <b3 class="redesign-num">04</b3>
-                                    <b3 class="redesign-tit">먼약 App</b3>
-                                    <p class="redesign-entit">munyak</p>
-                                    <p class="redesign-desc">
-                                        메인화면에 내용을 빼내서 보기좋게 정리<br>
-                                        하였으며 사진검색,쇼핑,약캘린더 기능을<br>
-                                        추가 하여 사용자의 편리성을 높였습니다.
-                                    </p>
-                                </div>
-                                <div class="redesign-r-bottom clearfix">
-                                    <div class="redesign-b-tit">
-                                        <p>Project</p>
-                                        <p>Date</p>
-                                        <p>Program</p>
+                                    <div class="redesign-button">
+                                        <a href="design/munyak/process.html" target="_blank"
+                                            class="button-design">Process</a>
+                                        <!--                                        <a href="#" class="button-process">Process</a>-->
                                     </div>
-                                    <div class="redesign-b-desc">
-                                        <p>먼약 어플 리디자인</p>
-                                        <p>2021.08</p>
-                                        <p>Photoshop / Illustrator</p>
-                                    </div>
-                                </div>
-                                <div class="redesign-button">
-                                    <a href="portflio/munyak/process.html" target="_blank" class="button-design">Process</a>
-                                    <!--                                        <a href="#" class="button-process">Process</a>-->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="redesign-pagination">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="redesign-navigation">
-                    <div class="rd-prev">
-                        <span class="icon-angle-left"></span>
+                    <div class="redesign-pagination">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <div class="rd-next">
-                        <span class="icon-angle-right"></span>
+                    <div class="redesign-navigation">
+                        <div class="rd-prev">
+                            <span class="icon-angle-left"></span>
+                        </div>
+                        <div class="rd-next">
+                            <span class="icon-angle-right"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- 퍼블리싱 -->
-        <div class="publishing" id="publishing">
-            <div class="pagew">
-                <div class="publishing-menu">
-                    <img src="images/publishing-menu.png">
+            <!-- 퍼블리싱 -->
+            <div class="publishing" id="publishing">
+                <div class="pagew">
+                    <div class="publishing-menu">
+                        <img src="images/publishing-menu.png">
+                    </div>
+                    <div class="publisging-slide">
+                        <div class="swiper-container sw-publishing">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="publishing-box box1">
+                                        <h1 class="publishing-number">01</h1>
+                                        <p class="publishing-entit">Hanam city hall</p>
+                                        <h3 class="publishing-tit">하남시청</h3>
+                                        <div class="publishing-focus">
+                                            <p>제작물 : PC Onepage</p>
+                                            <p>프로그램 : Html , Css , JS</p>
+                                            <p>제작일 : 2021.05</p>
+                                            <div class="button-publisghing clearfix">
+                                                <a href="portflio/hanam/index.html" target="_blank"
+                                                    class="p-button">PUBLISHING</a>
+                                                <a href="https://www.hanam.go.kr/www/index.do" target="_blank"
+                                                    class="o-button">ORIGINAL</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="publishing-box box2">
+                                        <h1 class="publishing-number">02</h1>
+                                        <p class="publishing-entit">Andbag</p>
+                                        <h3 class="publishing-tit">앤드백</h3>
+                                        <div class="publishing-focus">
+                                            <p>제작물 : PC Onepage / 반응형</p>
+                                            <p>프로그램 : Html , Css , JS</p>
+                                            <p>제작일 : 2021.06</p>
+                                            <div class="button-publisghing clearfix">
+                                                <a href="portflio/andbag/index.html" target="_blank"
+                                                    class="p-button">PUBLISHING</a>
+                                                <a href="https://andbag.co.kr/" target="_blank"
+                                                    class="o-button">ORIGINAL</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="publishing-box box3">
+                                        <h1 class="publishing-number">03</h1>
+                                        <p class="publishing-entit">Gyeonggi Content Agency</p>
+                                        <h3 class="publishing-tit">경기 콘텐츠 진흥원</h3>
+                                        <div class="publishing-focus">
+                                            <p>제작물 : PC Onepage</p>
+                                            <p>프로그램 : Html , Css , JS</p>
+                                            <p>제작일 : 2021.06</p>
+                                            <div class="button-publisghing clearfix">
+                                                <a href="portflio/gcon/index.html" target="_blank"
+                                                    class="p-button">PUBLISHING</a>
+                                                <a href="www.gcon.or.kr" target="_blank" class="o-button">ORIGINAL</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="publishing-box box4">
+                                        <h1 class="publishing-number">04</h1>
+                                        <p class="publishing-entit">Holt Love</p>
+                                        <h3 class="publishing-tit">홀트아동 복지회</h3>
+                                        <div class="publishing-focus">
+                                            <p>제작물 : PC Onepage</p>
+                                            <p>프로그램 : Html , Css , JS</p>
+                                            <p>제작일 : 2021.07</p>
+                                            <div class="button-publisghing clearfix">
+                                                <a href="portflio/loveholt/index.html" target="_blank"
+                                                    class="p-button">PUBLISHING</a>
+                                                <a href="https://love.holt.or.kr/dear3/" target="_blank"
+                                                    class="o-button">ORIGINAL</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="publishing-box box5">
+                                        <h1 class="publishing-number">05</h1>
+                                        <p class="publishing-entit">Noelohills</p>
+                                        <h3 class="publishing-tit">노엘로힐스</h3>
+                                        <div class="publishing-focus">
+                                            <p>제작물 : PC Onepage</p>
+                                            <p>프로그램 : Html , Css , JS</p>
+                                            <p>제작일 : 2021.07</p>
+                                            <div class="button-publisghing clearfix">
+                                                <a href="portflio/noelohills/index.html" target="_blank"
+                                                    class="p-button">PUBLISHING</a>
+                                                <a href="noelohills.com" target="_blank" class="o-button">ORIGINAL</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="publishing-box box6">
+                                        <h1 class="publishing-number">06</h1>
+                                        <p class="publishing-entit">Stxconst</p>
+                                        <h3 class="publishing-tit">STX 건설</h3>
+                                        <div class="publishing-focus">
+                                            <p>제작물 : PC Onepage</p>
+                                            <p>프로그램 : Html , Css , JS</p>
+                                            <p>제작일 : 2021.07</p>
+                                            <div class="button-publisghing clearfix">
+                                                <a href="portflio/stxconst/index.html" target="_blank"
+                                                    class="p-button">PUBLISHING</a>
+                                                <a href="www.stxconst.co.kr" target="_blank"
+                                                    class="o-button">ORIGINAL</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="publisging-pagination">
+                        <div class="pb-prev">
+                            <span class="icon-angle-left"></span>
+                        </div>
+                        <div class="pb-next">
+                            <span class="icon-angle-right"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="publisging-slide">
-                    <div class="swiper-container sw-publishing">
+            </div>
+            <!-- 모어워크 -->
+            <div class="work" id="work">
+                <div class="pagew">
+                    <div class="work-menu">
+                        <img src="images/works-menu.png">
+                    </div>
+                    <div class="works-container" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="works-box w-box1">
+                            <div class="works-box-focus">
+                                <b3 class="works-tit">농심 캐릭터 디자인</b3>
+                                <p class="works-desc">Character design</p>
+                            </div>
+                        </div>
+                        <div class="works-box w-box2">
+                            <div class="works-box-focus">
+                                <b3 class="works-tit">모래 패키지 디자인</b3>
+                                <p class="works-desc">Package design</p>
+                            </div>
+                        </div>
+                        <div class="works-box w-box3">
+                            <div class="works-box-focus">
+                                <b3 class="works-tit">북카페 로고 디자인</b3>
+                                <p class="works-desc">Logo design</p>
+                            </div>
+                        </div>
+                        <div class="works-box w-box4">
+                            <div class="works-box-focus">
+                                <b3 class="works-tit">리조트 리플렛 디자인</b3>
+                                <p class="works-desc">Leaflet design</p>
+                            </div>
+                        </div>
+                        <div class="works-box w-box5"></div>
+                        <div class="works-box w-box6"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 마이스토리 -->
+            <div class="story" id="story">
+                <div class="pagew">
+                    <div class="story-menu">
+                        <img src="images/story-menu.png">
+                    </div>
+                    <img src="images/story_1.png" class="story-img1" data-aos="fade-down-right" data-aos-duration="1000"
+                        data-aos-delay="400">
+                    <b3 class="story-tit1" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="400">
+                        "5년간의 경험"</b3>
+                    <p class="story-desc1" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="400">
+                        가볍게 시작한 아르바이트에서 시작하여<br>
+                        매장을 관리하는 매니저까지 성장하였습니다.<br>
+                        <br>
+                        짧지 않은 5년간의 시간을 통해<br>
+                        매니저 로써 리더쉽과 책임감이 생겼으며<br>
+                        매일 있는 목표를 크루들과 함께 달성하며<br>
+                        신뢰와 협동심이 생겼습니다.
+                    </p>
+                    <div class="swiper-container sw-story" data-aos="fade-up-left" data-aos-duration="1000"
+                        data-aos-delay="400">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="publishing-box box1">
-                                    <h1 class="publishing-number">01</h1>
-                                    <p class="publishing-entit">Hanam city hall</p>
-                                    <h3 class="publishing-tit">하남시청</h3>
-                                    <div class="publishing-focus">
-                                        <p>제작물 : PC Onepage</p>
-                                        <p>프로그램 : Html , Css , JS</p>
-                                        <p>제작일 : 2021.05</p>
-                                        <div class="button-publisghing clearfix">
-                                            <a href="portflio/hanam/index.html" target="_blank" class="p-button">PUBLISHING</a>
-                                            <a href="https://www.hanam.go.kr/www/index.do" target="_blank" class="o-button">ORIGINAL</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src="images/story_2.png" class="story-img2">
                             </div>
                             <div class="swiper-slide">
-                                <div class="publishing-box box2">
-                                    <h1 class="publishing-number">02</h1>
-                                    <p class="publishing-entit">Andbag</p>
-                                    <h3 class="publishing-tit">앤드백</h3>
-                                    <div class="publishing-focus">
-                                        <p>제작물 : PC Onepage / 반응형</p>
-                                        <p>프로그램 : Html , Css , JS</p>
-                                        <p>제작일 : 2021.06</p>
-                                        <div class="button-publisghing clearfix">
-                                            <a href="portflio/andbag/index.html" target="_blank" class="p-button">PUBLISHING</a>
-                                            <a href="https://andbag.co.kr/" target="_blank" class="o-button">ORIGINAL</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="publishing-box box3">
-                                    <h1 class="publishing-number">03</h1>
-                                    <p class="publishing-entit">Gyeonggi Content Agency</p>
-                                    <h3 class="publishing-tit">경기 콘텐츠 진흥원</h3>
-                                    <div class="publishing-focus">
-                                        <p>제작물 : PC Onepage</p>
-                                        <p>프로그램 : Html , Css , JS</p>
-                                        <p>제작일 : 2021.06</p>
-                                        <div class="button-publisghing clearfix">
-                                            <a href="portflio/gcon/index.html" target="_blank" class="p-button">PUBLISHING</a>
-                                            <a href="www.gcon.or.kr" target="_blank" class="o-button">ORIGINAL</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="publishing-box box4">
-                                    <h1 class="publishing-number">04</h1>
-                                    <p class="publishing-entit">Holt Love</p>
-                                    <h3 class="publishing-tit">홀트아동 복지회</h3>
-                                    <div class="publishing-focus">
-                                        <p>제작물 : PC Onepage</p>
-                                        <p>프로그램 : Html , Css , JS</p>
-                                        <p>제작일 : 2021.07</p>
-                                        <div class="button-publisghing clearfix">
-                                            <a href="portflio/loveholt/index.html" target="_blank" class="p-button">PUBLISHING</a>
-                                            <a href="https://love.holt.or.kr/dear3/" target="_blank" class="o-button">ORIGINAL</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="publishing-box box5">
-                                    <h1 class="publishing-number">05</h1>
-                                    <p class="publishing-entit">Noelohills</p>
-                                    <h3 class="publishing-tit">노엘로힐스</h3>
-                                    <div class="publishing-focus">
-                                        <p>제작물 : PC Onepage</p>
-                                        <p>프로그램 : Html , Css , JS</p>
-                                        <p>제작일 : 2021.07</p>
-                                        <div class="button-publisghing clearfix">
-                                            <a href="portflio/noelohills/index.html" target="_blank" class="p-button">PUBLISHING</a>
-                                            <a href="noelohills.com" target="_blank" class="o-button">ORIGINAL</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="publishing-box box6">
-                                    <h1 class="publishing-number">06</h1>
-                                    <p class="publishing-entit">Stxconst</p>
-                                    <h3 class="publishing-tit">STX 건설</h3>
-                                    <div class="publishing-focus">
-                                        <p>제작물 : PC Onepage</p>
-                                        <p>프로그램 : Html , Css , JS</p>
-                                        <p>제작일 : 2021.07</p>
-                                        <div class="button-publisghing clearfix">
-                                            <a href="portflio/stxconst/index.html" target="_blank" class="p-button">PUBLISHING</a>
-                                            <a href="www.stxconst.co.kr" target="_blank" class="o-button">ORIGINAL</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <img src="images/story_3.png" class="story-img3">
                             </div>
                         </div>
                     </div>
+                    <b3 class="story-tit2" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="400">"빠른 성장의
+                        기회"</b3>
+                    <p class="story-desc2" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="400">
+                        이후 온라인 침구회사에 입사하여<br>
+                        sns 업데이트, 상담업무를 시작으로<br>
+                        보조 MD에서 메인 MD 까지 단기간에 성장하였습니다.<br>
+                        그로 인해 전반적인 온라인 쇼핑몰의 관리,<br>
+                        아이템 선정, 매출 관리 등 회사의 전반적인 업무를 담당하며<br>
+                        하루가 다르게 성장하였습니다.<br>
+                        <br>
+                        맡은 몰에서 매출이 올라가는 것에도 큰 흥미를 느꼈지만<br>
+                        일손이 부족해 사진촬영, 상세페이지 작업을 도우며<br>
+                        웹디자이너와 웹퍼블리셔 업무에 큰 흥미를 느꼈습니다.
+                    </p>
                 </div>
-                <div class="publisging-pagination">
-                    <div class="pb-prev">
-                        <span class="icon-angle-left"></span>
+            </div>
+            <!-- 어바웃미 -->
+            <div class="aboutme" id="aboutme">
+                <div class="pagew">
+                    <div class="aboutme-menu">
+                        <img src="images/aboutme-menu.png">
                     </div>
-                    <div class="pb-next">
-                        <span class="icon-angle-right"></span>
-                    </div>
+                    <span class="aboutme-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                        <img src="images/aboutme-1.png">
+                    </span>
+                    <b3 class="aboutme-tit-1">Travel</b3>
+                    <p class="aboutme-desc-1">여행하는 것을 좋아하여 20살부터<br>여러 나라를 여행하였습니다.<br>여행을 통하여 보고 느낀 경험으로<br>여러 가지 아이디어를
+                        생각해냅니다.</p>
+                    <span class="aboutme-2" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                        <img src="images/aboutme-2.png">
+                    </span>
+                    <b3 class="aboutme-tit-2">Drawing</b3>
+                    <p class="aboutme-desc-2">어릴 때부터 손으로 끄적이는 것을<br>좋아해서 하나 둘 그리다 보니 정식으로<br>배운적은 없지만 현재까지 이어져오는<br>취미 중
+                        하나입니다.</p>
+                    <span class="aboutme-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                        <img src="images/aboutme-3.png">
+                    </span>
+                    <b3 class="aboutme-tit-3">Diary</b3>
+                    <p class="aboutme-desc-3">메모하는 습관을 가지고 있기에<br>다이어리에 하루의 기분을<br>가록하며 하루를 마무리 합니다.</p>
+                    <span class="aboutme-4" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                        <img src="images/aboutme-4.png">
+                    </span>
+                    <b3 class="aboutme-tit-4">Exercise</b3>
+                    <p class="aboutme-desc-4">간단히 할 수 있는 배드민턴,런데이<br>볼링,요가와 같은 간단한 운동을<br>즐겨 하며 그로 인해 체력을 키우고<br>있습니다.
+                    </p>
+                </div>
+            </div>
+            <!-- 하단 -->
+            <div class="footer" id="footer">
+                <div class="pagew" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <h3 class="footer-tit">Thank You For Watching</h3>
+                    <a href="mailto:tser5@naver.com" class="footer-mail">tser5@naver.com</a>
+                    <a href="https://drive.google.com/file/d/1c4ajuSrom1i2uWFztuQleamEMSpKjy9i/view?usp=sharing"
+                        target="_blank" class="footer-pdf">Download Portfolio</a>
+                    <span class="copy">©Copyrights 2021 By Kim won young All rights reserved.</span>
                 </div>
             </div>
         </div>
-        <!-- 모어워크 -->
-        <div class="work" id="work">
-            <div class="pagew">
-                <div class="work-menu">
-                    <img src="images/works-menu.png">
-                </div>
-                <div class="works-container" data-aos="zoom-in" data-aos-duration="1000">
-                    <div class="works-box w-box1">
-                        <div class="works-box-focus">
-                            <b3 class="works-tit">농심 캐릭터 디자인</b3>
-                            <p class="works-desc">Character design</p>
-                        </div>
-                    </div>
-                    <div class="works-box w-box2">
-                        <div class="works-box-focus">
-                            <b3 class="works-tit">모래 패키지 디자인</b3>
-                            <p class="works-desc">Package design</p>
-                        </div>
-                    </div>
-                    <div class="works-box w-box3">
-                        <div class="works-box-focus">
-                            <b3 class="works-tit">북카페 로고 디자인</b3>
-                            <p class="works-desc">Logo design</p>
-                        </div>
-                    </div>
-                    <div class="works-box w-box4">
-                        <div class="works-box-focus">
-                            <b3 class="works-tit">리조트 리플렛 디자인</b3>
-                            <p class="works-desc">Leaflet design</p>
-                        </div>
-                    </div>
-                    <div class="works-box w-box5"></div>
-                    <div class="works-box w-box6"></div>
-                </div>
-            </div>
-        </div>
-        <!-- 마이스토리 -->
-        <div class="story" id="story">
-            <div class="pagew">
-                <div class="story-menu">
-                    <img src="images/story-menu.png">
-                </div>
-                <img src="images/story_1.png" class="story-img1" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="400">
-                <b3 class="story-tit1" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="400">"5년간의 경험"</b3>
-                <p class="story-desc1" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="400">
-                    가볍게 시작한 아르바이트에서 시작하여<br>
-                    매장을 관리하는 매니저까지 성장하였습니다.<br>
-                    <br>
-                    짧지 않은 5년간의 시간을 통해<br>
-                    매니저 로써 리더쉽과 책임감이 생겼으며<br>
-                    매일 있는 목표를 크루들과 함께 달성하며<br>
-                    신뢰와 협동심이 생겼습니다.
-                </p>
-                <div class="swiper-container sw-story" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="400">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="images/story_2.png" class="story-img2">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="images/story_3.png" class="story-img3">
-                        </div>
-                    </div>
-                </div>
-                <b3 class="story-tit2" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="400">"빠른 성장의 기회"</b3>
-                <p class="story-desc2" data-aos="fade-up-left" data-aos-duration="1000" data-aos-delay="400">
-                    이후 온라인 침구회사에 입사하여<br>
-                    sns 업데이트, 상담업무를 시작으로<br>
-                    보조 MD에서 메인 MD 까지 단기간에 성장하였습니다.<br>
-                    그로 인해 전반적인 온라인 쇼핑몰의 관리,<br>
-                    아이템 선정, 매출 관리 등 회사의 전반적인 업무를 담당하며<br>
-                    하루가 다르게 성장하였습니다.<br>
-                    <br>
-                    맡은 몰에서 매출이 올라가는 것에도 큰 흥미를 느꼈지만<br>
-                    일손이 부족해 사진촬영, 상세페이지 작업을 도우며<br>
-                    웹디자이너와 웹퍼블리셔 업무에 큰 흥미를 느꼈습니다.
-                </p>
-            </div>
-        </div>
-        <!-- 어바웃미 -->
-        <div class="aboutme" id="aboutme">
-            <div class="pagew">
-                <div class="aboutme-menu">
-                    <img src="images/aboutme-menu.png">
-                </div>
-                <span class="aboutme-1" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                    <img src="images/aboutme-1.png" >
-                </span>
-                <b3 class="aboutme-tit-1">Travel</b3>
-                <p class="aboutme-desc-1">여행하는 것을 좋아하여 20살부터<br>여러 나라를 여행하였습니다.<br>여행을 통하여 보고 느낀 경험으로<br>여러 가지 아이디어를 생각해냅니다.</p>
-                <span  class="aboutme-2" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                    <img src="images/aboutme-2.png">
-                </span>
-                <b3 class="aboutme-tit-2">Drawing</b3>
-                <p class="aboutme-desc-2">어릴 때부터 손으로 끄적이는 것을<br>좋아해서 하나 둘 그리다 보니 정식으로<br>배운적은 없지만 현재까지 이어져오는<br>취미 중 하나입니다.</p>
-                <span class="aboutme-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                    <img src="images/aboutme-3.png">
-                </span>
-                <b3 class="aboutme-tit-3">Diary</b3>
-                <p class="aboutme-desc-3">메모하는 습관을 가지고 있기에<br>다이어리에 하루의 기분을<br>가록하며 하루를 마무리 합니다.</p>
-                <span class="aboutme-4" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                    <img src="images/aboutme-4.png">
-                </span>
-                <b3 class="aboutme-tit-4">Exercise</b3>
-                <p class="aboutme-desc-4">간단히 할 수 있는 배드민턴,런데이<br>볼링,요가와 같은 간단한 운동을<br>즐겨 하며 그로 인해 체력을 키우고<br>있습니다.</p>
-            </div>
-        </div>
-        <!-- 하단 -->
-        <div class="footer" id="footer">
-            <div class="pagew" data-aos="zoom-in-up" data-aos-duration="1000">
-                <h3 class="footer-tit">Thank You For Watching</h3>
-                <a href="mailto:tser5@naver.com" class="footer-mail">tser5@naver.com</a>
-                <a href="https://drive.google.com/file/d/1c4ajuSrom1i2uWFztuQleamEMSpKjy9i/view?usp=sharing" target="_blank" class="footer-pdf">Download Portfolio</a>
-                <span class="copy">©Copyrights 2021 By Kim won young All rights reserved.</span>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 
-</html>
+    </html>
